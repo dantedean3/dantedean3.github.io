@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>D'Ante Dean | Portfolio</title>
+  <meta name="description" content="D'Ante Dean — software engineering portfolio: PHP, automation, Rust systems, and data projects." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="container header">
+    <div class="brand">
+      <a class="logo" href="index.html">D'Ante Dean</a>
+      <div class="subtitle">Software Engineer | Automation • Systems • Data</div>
+    </div>
+
+    <nav class="nav">
+      <a href="projects.html">Projects</a>
+      <a href="assets/DAnte-Dean-Resume.pdf" target="_blank" rel="noopener">Resume</a>
+      <a href="https://github.com/dantedean3" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:dantedean.3@gmail.com">Email</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>I build production tools, automation workflows, and systems projects.</h1>
+      <p class="lead">
+        I’ve shipped internal admin features and cron automation for a university web system,
+        and I build systems and data projects in Rust, Python, and R.
+      </p>
+
+      <div class="cta">
+        <a class="button" href="projects.html">View Projects</a>
+        <a class="button ghost" href="https://github.com/dantedean3" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h2>Checklist Admin + Group Management</h2>
+        <p>Production PHP tooling for student group membership, criteria validation, and roster views.</p>
+        <a class="link" href="projects.html#checklist">Read more →</a>
+      </div>
+
+      <div class="card">
+        <h2>Automation + Cron Reporting</h2>
+        <p>Scheduled scripts to refresh reporting tables from CSV + DB sources with production-safe execution.</p>
+        <a class="link" href="projects.html#automation">Read more →</a>
+      </div>
+
+      <div class="card">
+        <h2>Simple SCM (Rust)</h2>
+        <p>A Git-inspired SCM implementation demonstrating file storage, commits, and revert workflows.</p>
+        <a class="link" href="projects.html#scm">Read more →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <div>© <span id="year"></span> D'Ante Dean</div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
