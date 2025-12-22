@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -27,7 +26,7 @@
     <section class="section">
       <h1>Projects</h1>
       <p class="meta">
-        A mix of production admin work, automation scripts, and systems/data projects.
+        A mix of production admin tooling, automation scripts, and systems projects.
       </p>
     </section>
 
@@ -39,21 +38,20 @@
 
       <h3>What it is</h3>
       <p>
-        Internal admin tooling to manage student groups and view roster membership,
-        including criteria-based group definitions and validation.
+        Internal admin tooling used to manage student groups and view roster membership,
+        including criteria-based group definitions.
       </p>
 
       <h3>What I built</h3>
       <ul>
-        <li>Created an admin page to select a group and render a roster of members</li>
-        <li>Added/updated student-group utilities to compute membership from group definitions</li>
-        <li>Improved validation in the add/edit group definition flow to prevent invalid criteria submissions</li>
-        <li>Refactored and cleaned up legacy PHP to reduce confusion and simplify maintenance</li>
+        <li>Admin page to select a group and render a roster of members</li>
+        <li>Student/group utilities to compute membership from group definitions</li>
+        <li>Validation fixes in the group definition workflow to prevent invalid criteria</li>
+        <li>Refactoring and cleanup of legacy PHP code paths</li>
       </ul>
 
-      <h3>Notes</h3>
       <p class="meta">
-        Work code lives in a private repo. I can share a walkthrough and sanitized screenshots on request.
+        Code lives in a private work repository. Screenshots and walkthroughs available on request.
       </p>
     </section>
 
@@ -61,19 +59,18 @@
 
     <section class="section" id="automation">
       <h2>Automation + Cron Reporting</h2>
-      <p class="meta">PHP CLI • Cron • Linux • Reporting tables</p>
+      <p class="meta">PHP CLI • Cron • Linux</p>
 
       <h3>What it is</h3>
       <p>
-        Scheduled scripts that refresh reporting data by clearing and repopulating tables
-        from CSV and database sources.
+        Scheduled scripts that clear and repopulate reporting tables from CSV and database sources.
       </p>
 
       <h3>What I built</h3>
       <ul>
-        <li>Migrated scripts between schedules (daily → hourly) when requirements changed</li>
-        <li>Added production-safe execution gates (time-based runs) and improved logging readability</li>
-        <li>Removed debug output and tightened formatting before merge</li>
+        <li>Migrated scripts between schedules (daily → hourly)</li>
+        <li>Added production-safe execution gates</li>
+        <li>Removed debug output and improved script readability</li>
       </ul>
     </section>
 
@@ -85,15 +82,15 @@
 
       <h3>What it is</h3>
       <p>
-        A simplified source control manager inspired by Git, built to understand commit storage
-        and revert workflows.
+        A simplified source control manager inspired by Git, built to understand how commits
+        and reverts work internally.
       </p>
 
       <h3>What I built</h3>
       <ul>
-        <li>Repo initialization, commit creation, and revert functionality</li>
-        <li>File snapshot storage approach and CLI interface</li>
-        <li>Repeatable demo workflow and documentation</li>
+        <li>Repository initialization and commit creation</li>
+        <li>File snapshot storage</li>
+        <li>Revert functionality and CLI interface</li>
       </ul>
     </section>
   </main>
