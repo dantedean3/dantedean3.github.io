@@ -32,6 +32,7 @@
 
     <hr />
 
+    <!-- CHECKLIST PROJECT -->
     <section class="section" id="checklist">
       <h2>Checklist Admin + Group Management (Production)</h2>
       <p class="meta">PHP • MySQL • CSV ingestion • Admin tooling</p>
@@ -48,15 +49,58 @@
         <li>Student/group utilities to compute membership from group definitions</li>
         <li>Validation fixes in the group definition workflow to prevent invalid criteria</li>
         <li>Refactoring and cleanup of legacy PHP code paths</li>
+        <li>Administrative reset and visibility controls for new-term workflows</li>
       </ul>
 
+      <h3>Screenshots (sanitized)</h3>
+
+      <!-- View Student Groups -->
+      <div class="media-grid">
+        <figure class="shot">
+          <img src="assets/img/View-Students-Groups.png" alt="View a student's groups page" loading="lazy">
+          <figcaption class="meta">Student Groups tool: select a group to view membership.</figcaption>
+        </figure>
+
+        <figure class="shot">
+          <img src="assets/img/View-Students-Groups-Dropdown.png" alt="Student groups dropdown open" loading="lazy">
+          <figcaption class="meta">Group dropdown: supports many groups and quick selection.</figcaption>
+        </figure>
+      </div>
+
+      <!-- Group Definition -->
+      <div class="media-grid">
+        <figure class="shot">
+          <img src="assets/img/Group-Definition.png" alt="Add or update group definition screen" loading="lazy">
+          <figcaption class="meta">Group Definition interface: edit group properties and criteria.</figcaption>
+        </figure>
+
+        <figure class="shot">
+          <img src="assets/img/Group-Defintion2.png" alt="Edit existing group layout" loading="lazy">
+          <figcaption class="meta">Updated group definition layout with improved save flow.</figcaption>
+        </figure>
+      </div>
+
+      <!-- Admin Controls -->
+      <div class="media-grid">
+        <figure class="shot">
+          <img src="assets/img/Set-Task-As-Invs.png" alt="Set all tasks invisible tool" loading="lazy">
+          <figcaption class="meta">Bulk visibility control: hide tasks from student-facing checklist.</figcaption>
+        </figure>
+
+        <figure class="shot">
+          <img src="assets/img/ClearDB.png" alt="Clear checklist database tables tool" loading="lazy">
+          <figcaption class="meta">Administrative reset tool used at the start of a new term.</figcaption>
+        </figure>
+      </div>
+
       <p class="meta">
-        Code lives in a private work repository. Screenshots and walkthroughs available on request.
+        Code lives in a private work repository. Screenshots are sanitized to remove personal identifiers.
       </p>
     </section>
 
     <hr />
 
+    <!-- AUTOMATION -->
     <section class="section" id="automation">
       <h2>Automation + Cron Reporting</h2>
       <p class="meta">PHP CLI • Cron • Linux</p>
@@ -76,6 +120,7 @@
 
     <hr />
 
+    <!-- SCM -->
     <section class="section" id="scm">
       <h2>Simple SCM (Rust)</h2>
       <p class="meta">Rust • Filesystems • CLI</p>
