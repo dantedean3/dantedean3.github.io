@@ -179,3 +179,32 @@ hr {
     font-size: 30px;
   }
 }
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.shot {
+  margin: 0;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.shot img {
+  width: 100%;
+  display: block;
+}
+
+.shot figcaption {
+  padding: 10px 12px;
+}
+
+@media (max-width: 860px) {
+  .media-grid {
+    grid-template-columns: 1fr;
+  }
+}
