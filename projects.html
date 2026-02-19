@@ -26,44 +26,7 @@
     <section class="section">
       <h1>Projects</h1>
       <p class="meta">
-        Production work, client deployments, automation, and systems projects.
-      </p>
-    </section>
-
-    <hr />
-
-    <!-- CLIENT WEBSITE -->
-    <section class="section" id="libraink">
-      <h2>Libra Ink Tattoos (Client Website)</h2>
-      <p class="meta">Production deployment • Booking system • Gallery management • Client collaboration</p>
-
-      <h3>Overview</h3>
-      <p>
-        Designed and launched a live production website for a tattoo studio to modernize client acquisition,
-        streamline booking requests, and showcase artist work in a structured, conversion-focused layout.
-      </p>
-
-      <h3>Key Features Delivered</h3>
-      <ul>
-        <li>Implemented an online booking workflow that supports scheduling requests and reduces back-and-forth messaging</li>
-        <li>Built a categorized tattoo gallery to showcase portfolio work and increase customer confidence before booking</li>
-        <li>Structured services and pricing pages to reduce decision friction and improve inquiry quality</li>
-        <li>Designed a mobile-first experience optimized for real-world traffic patterns and fast scanning</li>
-        <li>Created clear call-to-action flows across the site to drive bookings, inquiries, and contact submissions</li>
-      </ul>
-
-      <h3>Impact</h3>
-      <ul>
-        <li>Enabled 24/7 booking access so customers can request appointments outside business hours</li>
-        <li>Centralized portfolio + services + contact into one system, improving credibility and conversion</li>
-        <li>Reduced operational friction by giving customers answers up front (services, pricing, examples of work)</li>
-        <li>Improved professional online presence for a growing local business</li>
-      </ul>
-
-      <p>
-        <a class="button" href="https://librainktattoos.com/" target="_blank" rel="noopener">
-          View Live Site
-        </a>
+        Production work, automation systems, and client deployments.
       </p>
     </section>
 
@@ -74,64 +37,60 @@
       <h2>Checklist Admin + Group Management (Production)</h2>
       <p class="meta">PHP • MySQL • CSV ingestion • Admin tooling</p>
 
-      <h3>What it is</h3>
+      <h3>Overview</h3>
       <p>
-        Internal admin tooling used to manage student groups and render roster membership
-        from criteria-based group definitions.
+        Internal admin tooling used to compute and render student group membership
+        from criteria-based definitions.
       </p>
 
-      <h3>What I built</h3>
+      <h3>Impact</h3>
       <ul>
-        <li>Admin page to select a group and render a roster of members</li>
-        <li>Student/group utilities to compute membership from group definitions</li>
-        <li>Validation fixes in the group definition workflow to prevent invalid criteria</li>
-        <li>Refactoring and cleanup of legacy PHP code paths</li>
-        <li>Administrative reset and visibility controls for new-term workflows</li>
+        <li>Built dynamic group membership rendering used by administrators</li>
+        <li>Improved validation logic to prevent invalid criteria submissions</li>
+        <li>Refactored legacy PHP paths for cleaner execution and maintainability</li>
+        <li>Implemented reset and visibility controls for term transitions</li>
       </ul>
 
       <h3>Screenshots (sanitized)</h3>
 
-      <!-- View Student Groups -->
       <div class="media-grid">
         <figure class="shot">
           <img src="assets/img/View-Students-Groups.png" alt="View a student's groups page" loading="lazy">
-          <figcaption class="meta">Student Groups tool: select a group to view membership.</figcaption>
+          <figcaption class="meta">Select a group and render membership.</figcaption>
         </figure>
 
         <figure class="shot">
           <img src="assets/img/View-Students-Groups-Dropdown.png" alt="Student groups dropdown open" loading="lazy">
-          <figcaption class="meta">Group dropdown: supports many groups and quick selection.</figcaption>
+          <figcaption class="meta">Dynamic group selection interface.</figcaption>
         </figure>
       </div>
 
-      <!-- Group Definition -->
       <div class="media-grid">
         <figure class="shot">
           <img src="assets/img/Group-Definition.png" alt="Add or update group definition screen" loading="lazy">
-          <figcaption class="meta">Group Definition interface: edit group properties and criteria.</figcaption>
+          <figcaption class="meta">Group definition editing and criteria management.</figcaption>
         </figure>
 
         <figure class="shot">
           <img src="assets/img/Group-Defintion2.png" alt="Edit existing group layout" loading="lazy">
-          <figcaption class="meta">Updated group definition layout with improved save flow.</figcaption>
+          <figcaption class="meta">Updated layout and improved save flow.</figcaption>
         </figure>
       </div>
 
-      <!-- Admin Controls -->
       <div class="media-grid">
         <figure class="shot">
           <img src="assets/img/Set-Task-As-Invs.png" alt="Set all tasks invisible tool" loading="lazy">
-          <figcaption class="meta">Bulk visibility control: hide tasks from student-facing checklist.</figcaption>
+          <figcaption class="meta">Bulk task visibility controls.</figcaption>
         </figure>
 
         <figure class="shot">
           <img src="assets/img/ClearDB.png" alt="Clear checklist database tables tool" loading="lazy">
-          <figcaption class="meta">Administrative reset tool used at the start of a new term.</figcaption>
+          <figcaption class="meta">Administrative reset tool for new-term workflows.</figcaption>
         </figure>
       </div>
 
       <p class="meta">
-        Code lives in a private work repository. Screenshots are sanitized to remove personal identifiers.
+        Code lives in a private work repository.
       </p>
     </section>
 
@@ -142,21 +101,17 @@
       <h2>Automation + Cron Reporting</h2>
       <p class="meta">PHP CLI • Cron • Linux</p>
 
-      <h3>What it is</h3>
+      <h3>Overview</h3>
       <p>
-        Scheduled reporting scripts that clear and repopulate tables from CSV and database sources.
+        Scheduled reporting scripts that clear and repopulate data from CSV and database sources.
       </p>
 
       <h3>Impact</h3>
       <ul>
-        <li>Migrated reporting scripts from daily to hourly schedules to improve data freshness for stakeholders</li>
-        <li>Added production-safe execution gates (environment checks and guardrails) to reduce risk during automated runs</li>
-        <li>Improved maintainability by removing debug artifacts and tightening script flow for easier handoff</li>
+        <li>Migrated reporting jobs from daily to hourly execution</li>
+        <li>Added environment guards for production-safe automation</li>
+        <li>Improved readability and long-term maintainability</li>
       </ul>
-
-      <p class="meta">
-        Details are summarized due to internal tooling; walkthrough available on request.
-      </p>
     </section>
 
     <hr />
@@ -166,23 +121,38 @@
       <h2>Simple SCM (Rust)</h2>
       <p class="meta">Rust • Filesystems • CLI</p>
 
-      <h3>What it is</h3>
+      <h3>Overview</h3>
       <p>
-        A simplified source control manager inspired by Git, built to understand how commits,
-        snapshots, and restores work internally.
+        A simplified source control manager built to understand commit storage and file reversion mechanics.
       </p>
 
-      <h3>What I built</h3>
+      <h3>What I Built</h3>
       <ul>
-        <li>Repository initialization, commit creation, and history tracking</li>
-        <li>File snapshot storage to persist versions of tracked files</li>
-        <li>Revert/restore functionality with a CLI interface</li>
+        <li>Repository initialization and commit tracking</li>
+        <li>File snapshot storage</li>
+        <li>Revert functionality with CLI interface</li>
       </ul>
+    </section>
 
-      <p class="meta">
-        Repo link and demo output available on GitHub.
+    <hr />
+
+    <!-- CLIENT WEBSITE -->
+    <section class="section" id="libraink">
+      <h2>Libra Ink Tattoos (Client Website)</h2>
+      <p class="meta">Production deployment • Booking workflow • Gallery system</p>
+
+      <p>
+        Designed and deployed a live booking and portfolio website for a tattoo studio,
+        enabling online scheduling and structured showcase of artist work.
+      </p>
+
+      <p>
+        <a class="button" href="https://librainktattoos.com/" target="_blank" rel="noopener">
+          View Live Site
+        </a>
       </p>
     </section>
+
   </main>
 
   <footer class="container footer">
