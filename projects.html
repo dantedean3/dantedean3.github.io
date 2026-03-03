@@ -26,7 +26,83 @@
     <section class="section">
       <h1>Projects</h1>
       <p class="meta">
-        A mix of production admin tooling, client-facing sites, and product work across frontend + backend.
+        Production work, automation systems, and client deployments.
+      </p>
+    </section>
+
+    <hr />
+
+    <!-- CHECKLIST PROJECT -->
+    <section class="section" id="checklist">
+      <h2>Checklist Admin + Group Management (Production)</h2>
+      <p class="meta">PHP • MySQL • CSV ingestion • Admin tooling</p>
+
+      <h3>Overview</h3>
+      <p>
+        Internal admin tooling used to compute and render student group membership
+        from criteria-based definitions.
+      </p>
+
+      <h3>Impact</h3>
+      <ul>
+        <li>Built dynamic group membership rendering used by administrators</li>
+        <li>Improved validation logic to prevent invalid criteria submissions</li>
+        <li>Refactored legacy PHP paths for cleaner execution and maintainability</li>
+        <li>Implemented reset and visibility controls for term transitions</li>
+      </ul>
+
+      <h3>Screenshots (sanitized)</h3>
+
+      <div class="media-grid">
+        <figure class="shot">
+          <img src="assets/projects/View Students in Group.jpg" alt="View students in group page" loading="lazy">
+          <figcaption class="meta">Roster view for a selected group.</figcaption>
+        </figure>
+
+        <figure class="shot">
+          <img src="assets/projects/View a Students groups.jpg" alt="View a student's groups page" loading="lazy">
+          <figcaption class="meta">Lookup a student and list their group memberships.</figcaption>
+        </figure>
+      </div>
+
+      <div class="media-grid">
+        <figure class="shot">
+          <img src="assets/projects/Group-Definition.png" alt="Add or update group definition screen" loading="lazy">
+          <figcaption class="meta">Group definition and criteria management.</figcaption>
+        </figure>
+
+        <figure class="shot">
+          <img src="assets/projects/Group-Defintion2.png" alt="Edit existing group layout" loading="lazy">
+          <figcaption class="meta">Updated edit flow and improved layout.</figcaption>
+        </figure>
+      </div>
+
+      <div class="media-grid">
+        <figure class="shot">
+          <img src="assets/projects/Set-Task-As-Invs.png" alt="Set all tasks invisible tool" loading="lazy">
+          <figcaption class="meta">Bulk task visibility control for admins.</figcaption>
+        </figure>
+
+        <figure class="shot">
+          <img src="assets/projects/ClearDB.png" alt="Clear checklist database tables tool" loading="lazy">
+          <figcaption class="meta">Administrative reset tool for new-term workflows.</figcaption>
+        </figure>
+      </div>
+
+      <div class="media-grid">
+        <figure class="shot">
+          <img src="assets/projects/get-groups-code.png" alt="Group membership helper code" loading="lazy">
+          <figcaption class="meta">Helper logic for collecting IDs and resolving membership.</figcaption>
+        </figure>
+
+        <figure class="shot">
+          <img src="assets/projects/view-a-studs-group-code.png" alt="View student groups page code" loading="lazy">
+          <figcaption class="meta">Page logic for lookup + rendering group results.</figcaption>
+        </figure>
+      </div>
+
+      <p class="meta">
+        Code lives in a private work repository.
       </p>
     </section>
 
@@ -34,137 +110,135 @@
 
     <!-- DOCU ISLAND -->
     <section class="section" id="docuisland">
-      <h2>Docu Island — Document & Records Management Platform</h2>
-      <p class="meta">Full-stack • Product UI • Workflows • Admin settings</p>
+      <h2>Docu Island (Team Project)</h2>
+      <p class="meta">Frontend • Backend • Bug fixes • Production app support</p>
 
+      <h3>Overview</h3>
       <p>
-        Contributed across frontend and backend to a document and records management platform (cloud + web app),
-        focused on user workflows, UI polish, and bug fixes across production screens.
+        A document and records management platform used by businesses to organize files, manage records,
+        and centralize workflows across departments.
       </p>
 
-      <h3>Highlights</h3>
+      <h3>What I Worked On</h3>
       <ul>
-        <li>Improved day-to-day workflows across Records, Documents, and linked-document views</li>
-        <li>Shipped UI fixes and UX polish across dashboards, analytics, and admin settings screens</li>
-        <li>Supported customer-facing issues with targeted backend + frontend fixes</li>
+        <li>Frontend UI work across records and dashboard views</li>
+        <li>Backend updates to support platform workflows and fixes</li>
+        <li>Bug fixing and polish across multiple modules during active use</li>
       </ul>
+
+      <p>
+        <a class="button" href="https://docuisland.com/" target="_blank" rel="noopener">
+          View Site
+        </a>
+      </p>
+
+      <h3>Screenshots</h3>
+      <p class="meta">
+        “docu demo” and “docu2” are from a demo account. The rest are from a client environment.
+      </p>
 
       <div class="media-grid">
         <figure class="shot">
-          <img src="assets/projects/docu-homepage.png" alt="Docu Island marketing homepage" loading="lazy" />
-          <figcaption class="meta">Marketing homepage</figcaption>
+          <img src="assets/projects/docu demo.webp" alt="Docu Island demo screenshot" loading="lazy">
+          <figcaption class="meta">Demo environment view.</figcaption>
         </figure>
 
         <figure class="shot">
-          <img src="assets/projects/docu-aboutus.png" alt="Docu Island about section" loading="lazy" />
-          <figcaption class="meta">About page / positioning</figcaption>
-        </figure>
-
-        <figure class="shot">
-          <img src="assets/projects/docu-dashboard.png" alt="Docu Island dashboard view" loading="lazy" />
-          <figcaption class="meta">Dashboard (client account)</figcaption>
-        </figure>
-
-        <figure class="shot">
-          <img src="assets/projects/docu-analytics.png" alt="Docu Island analytics view" loading="lazy" />
-          <figcaption class="meta">Analytics (client account)</figcaption>
-        </figure>
-
-        <figure class="shot">
-          <img src="assets/projects/docu-companysetup.png" alt="Docu Island company setup screen" loading="lazy" />
-          <figcaption class="meta">Company profile / setup</figcaption>
-        </figure>
-
-        <figure class="shot">
-          <img src="assets/projects/docu demo.webp" alt="Docu Island demo records list view" loading="lazy" />
-          <figcaption class="meta">Demo account: Records list</figcaption>
-        </figure>
-
-        <figure class="shot">
-          <img src="assets/projects/docu2.webp" alt="Docu Island demo record details view" loading="lazy" />
-          <figcaption class="meta">Demo account: Record details + linked docs</figcaption>
+          <img src="assets/projects/docu2.webp" alt="Docu Island demo screenshot 2" loading="lazy">
+          <figcaption class="meta">Demo environment view (alternate screen).</figcaption>
         </figure>
       </div>
 
-      <p class="meta" style="margin-top:12px;">
-        Link: <a class="link" href="https://docuisland.com/" target="_blank" rel="noopener">docuisland.com</a>
-      </p>
-    </section>
+      <div class="media-grid">
+        <figure class="shot">
+          <img src="assets/projects/docu-dashboard.png" alt="Docu Island dashboard" loading="lazy">
+          <figcaption class="meta">Dashboard view in client environment.</figcaption>
+        </figure>
 
-    <hr />
-
-    <!-- WILLAMETTE CHECKLIST ADMIN TOOLING -->
-    <section class="section" id="admin-tooling">
-      <h2>University Admin Tooling — Student Groups & Checklist Operations</h2>
-      <p class="meta">PHP • Admin UI • Data integrity • Internal tools</p>
-
-      <p>
-        Built and maintained internal admin pages used by staff to manage student group logic and operational
-        tasks safely (visibility toggles, database clearing workflows, and group membership views).
-      </p>
-
-      <h3>What I built</h3>
-      <ul>
-        <li>Admin actions for operational tasks (safe “clear tables” workflow + task visibility controls)</li>
-        <li>Pages to view group membership and student group lists</li>
-        <li>Backend utilities for group membership lookup and cleaner, documented code paths</li>
-      </ul>
+        <figure class="shot">
+          <img src="assets/projects/docu-analytics.png" alt="Docu Island analytics" loading="lazy">
+          <figcaption class="meta">Analytics reporting view.</figcaption>
+        </figure>
+      </div>
 
       <div class="media-grid">
         <figure class="shot">
-          <img src="assets/projects/ClearDB.png" alt="Clear Checklist Database Tables admin page" loading="lazy" />
-          <figcaption class="meta">Clear selected database tables (admin)</figcaption>
+          <img src="assets/projects/docu-companysetup.png" alt="Docu Island company setup" loading="lazy">
+          <figcaption class="meta">Company profile and configuration screen.</figcaption>
         </figure>
 
         <figure class="shot">
-          <img src="assets/projects/Set-Task-As-Invs.png" alt="Set Tasks as Invisible admin page" loading="lazy" />
-          <figcaption class="meta">Set tasks invisible (admin)</figcaption>
+          <img src="assets/projects/docu-homepage.png" alt="Docu Island homepage" loading="lazy">
+          <figcaption class="meta">Public-facing site page.</figcaption>
         </figure>
+      </div>
 
+      <div class="media-grid">
         <figure class="shot">
-          <img src="assets/projects/Group-Definition.png" alt="Group definition admin page" loading="lazy" />
-          <figcaption class="meta">Group definition workflow (admin)</figcaption>
-        </figure>
-
-        <figure class="shot">
-          <img src="assets/projects/Group-Defintion2.png" alt="Edit existing group admin page" loading="lazy" />
-          <figcaption class="meta">Edit existing group (admin)</figcaption>
-        </figure>
-
-        <figure class="shot">
-          <img src="assets/projects/View Students in Group.jpg" alt="View students in group admin page with roster" loading="lazy" />
-          <figcaption class="meta">View students in group (roster)</figcaption>
-        </figure>
-
-        <figure class="shot">
-          <img src="assets/projects/View a Students groups.jpg" alt="View a student's groups admin page" loading="lazy" />
-          <figcaption class="meta">View a student’s groups</figcaption>
-        </figure>
-
-        <figure class="shot">
-          <img src="assets/projects/get-groups-code.png" alt="PHP code screenshot for group membership method" loading="lazy" />
-          <figcaption class="meta">Backend utility for group membership lookup</figcaption>
-        </figure>
-
-        <figure class="shot">
-          <img src="assets/projects/view-a-studs-group-code.png" alt="PHP code screenshot for student groups page" loading="lazy" />
-          <figcaption class="meta">Admin page implementation (PHP)</figcaption>
+          <img src="assets/projects/docu-aboutus.png" alt="Docu Island about page" loading="lazy">
+          <figcaption class="meta">Public-facing about page.</figcaption>
         </figure>
       </div>
     </section>
 
     <hr />
 
-    <!-- LIBRA INK (SHORT + BOTTOM) -->
+    <!-- AUTOMATION -->
+    <section class="section" id="automation">
+      <h2>Automation + Cron Reporting</h2>
+      <p class="meta">PHP CLI • Cron • Linux</p>
+
+      <h3>Overview</h3>
+      <p>
+        Scheduled reporting scripts that clear and repopulate data from CSV and database sources.
+      </p>
+
+      <h3>Impact</h3>
+      <ul>
+        <li>Migrated reporting jobs from daily to hourly execution</li>
+        <li>Added environment guards for production-safe automation</li>
+        <li>Improved readability and long-term maintainability</li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <!-- SCM -->
+    <section class="section" id="scm">
+      <h2>Simple SCM (Rust)</h2>
+      <p class="meta">Rust • Filesystems • CLI</p>
+
+      <h3>Overview</h3>
+      <p>
+        A simplified source control manager built to understand commit storage and file reversion mechanics.
+      </p>
+
+      <h3>What I Built</h3>
+      <ul>
+        <li>Repository initialization and commit tracking</li>
+        <li>File snapshot storage</li>
+        <li>Revert functionality with CLI interface</li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <!-- CLIENT WEBSITE -->
     <section class="section" id="libraink">
-      <h2>Libra Ink Tattoos — Client Website</h2>
-      <p class="meta">Client site • Booking • Gallery</p>
+      <h2>Libra Ink Tattoos (Client Website)</h2>
+      <p class="meta">Production deployment • Booking workflow • Gallery system</p>
+
+      <p class="meta">
+        Live tattoo studio site with booking and a gallery to showcase artist work.
+      </p>
 
       <p>
-        Built a client-facing tattoo shop website with booking scheduling and a portfolio-style gallery.
-        <a class="link" href="https://librainktattoos.com/" target="_blank" rel="noopener">Visit site</a>
+        <a class="button" href="https://librainktattoos.com/" target="_blank" rel="noopener">
+          View Live Site
+        </a>
       </p>
     </section>
+
   </main>
 
   <footer class="container footer">
