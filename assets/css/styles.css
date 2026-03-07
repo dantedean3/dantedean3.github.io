@@ -37,7 +37,7 @@ body {
 }
 
 .container {
-  width: min(1100px, calc(100% - 32px));
+  width: min(1180px, calc(100% - 40px));
   margin: 0 auto;
 }
 
@@ -101,14 +101,14 @@ body {
 .hero {
   min-height: 72vh;
   display: grid;
-  grid-template-columns: 1.3fr 0.9fr;
-  gap: 28px;
+  grid-template-columns: minmax(0, 1.6fr) minmax(320px, 0.85fr);
+  gap: 40px;
   align-items: center;
   padding: 64px 0 44px;
 }
 
 .hero-copy {
-  max-width: 720px;
+  max-width: none;
 }
 
 .eyebrow {
@@ -126,18 +126,19 @@ body {
 }
 
 .hero h1 {
-  font-size: clamp(2.5rem, 5vw, 4.4rem);
+  font-size: clamp(3rem, 5vw, 5rem);
   line-height: 1.02;
   margin: 0 0 18px;
   letter-spacing: -0.04em;
-  max-width: 11ch;
+  max-width: 13ch;
+  text-wrap: balance;
 }
 
 .lead {
   color: var(--muted);
-  font-size: 18px;
-  max-width: 650px;
-  margin: 0 0 12px;
+  font-size: 19px;
+  max-width: 760px;
+  margin: 0 0 14px;
 }
 
 .cta {
@@ -383,7 +384,7 @@ hr {
   }
 
   .hero h1 {
-    max-width: none;
+    max-width: 16ch;
   }
 
   .grid {
@@ -409,6 +410,11 @@ hr {
 
   .section h2 {
     font-size: 24px;
+  }
+
+  .hero h1 {
+    max-width: none;
+    font-size: clamp(2.4rem, 9vw, 3.4rem);
   }
 
   main > .section:not(:first-child) {
