@@ -3,24 +3,27 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>D'Ante Dean | Portfolio</title>
-  <meta name="description" content="D'Ante Dean — software engineering portfolio: production systems, automation, and web development." />
+  <title>D'Ante Dean | Software Engineer Portfolio</title>
+  <meta name="description" content="D'Ante Dean — software engineer building full-stack apps, backend systems, automation tools, admin dashboards, and production web platforms." />
   <meta property="og:title" content="D'Ante Dean | Software Engineer Portfolio" />
-  <meta property="og:description" content="Production web systems, automation tools, and full-stack applications built with PHP, Python, Rust, SQL, and R." />
+  <meta property="og:description" content="Full-stack apps, backend systems, automation tools, and production web platforms built with React, Supabase, PHP, Python, PostgreSQL, SQL, and Rust." />
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
-<body>
-  <header class="container header">
-    <div class="brand">
-      <a class="logo" href="index.html">D'Ante Dean</a>
-      <div class="subtitle">Software Engineer • Web • Automation • Systems</div>
-    </div>
 
-    <nav class="nav">
-      <a href="projects.html">Projects</a>
-      <a href="https://github.com/dantedean3" target="_blank" rel="noopener">GitHub</a>
-      <a href="mailto:dantedean.3@gmail.com">Email</a>
-    </nav>
+<body>
+  <header class="site-header">
+    <div class="container header">
+      <div class="brand">
+        <a class="logo" href="index.html">D'Ante Dean</a>
+        <div class="subtitle">Software Engineer • Full-Stack • Automation • Systems</div>
+      </div>
+
+      <nav class="nav">
+        <a href="projects.html">Projects</a>
+        <a href="https://github.com/dantedean3" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:dantedean.3@gmail.com">Email</a>
+      </nav>
+    </div>
   </header>
 
   <main class="container">
@@ -28,17 +31,18 @@
       <div class="hero-copy">
         <p class="eyebrow">Software Engineer</p>
 
-        <h1>Building production systems that people actually use.</h1>
+        <h1>I build full-stack tools that turn messy workflows into usable systems.</h1>
 
         <p class="lead">
-          I build full-stack applications, backend systems, and automation tools
-          across university, business, and client environments.
+          I’m a recent Computer Science and Data Science graduate focused on
+          building practical applications, admin tools, dashboards, and automation
+          systems that help people manage real work more efficiently.
         </p>
 
         <p class="lead">
-          My work includes internal admin tooling, production web platforms,
-          workflow automation, and scalable applications built with PHP, Python,
-          React, PostgreSQL, Supabase, and Rust.
+          My projects combine frontend usability with backend logic, databases,
+          authentication, file handling, APIs, and deployment. I care about making
+          software that is clean enough to use, not just good enough to demo.
         </p>
 
         <div class="cta">
@@ -49,79 +53,128 @@
 
       <div class="hero-panel">
         <div class="hero-stat-card">
-          <span class="stat-label">Current Focus</span>
-          <span class="stat-value">Full-Stack Apps + Production Systems</span>
+          <span class="stat-label">What I Build</span>
+          <span class="stat-value">Dashboards, internal tools, task systems, APIs, automation, and client websites</span>
         </div>
 
         <div class="hero-stat-card">
-          <span class="stat-label">Core Stack</span>
-          <span class="stat-value">PHP · Python · React · Supabase · SQL · Rust</span>
+          <span class="stat-label">How I Work</span>
+          <span class="stat-value">Problem → workflow → database → interface → deployment</span>
         </div>
 
         <div class="hero-stat-card">
-          <span class="stat-label">Recent Work</span>
-          <span class="stat-value">LogLens AI, Task Manager, Admin Tooling, Automation, Client Deployments</span>
+          <span class="stat-label">Recent Proof</span>
+          <span class="stat-value">Live apps with auth, PostgreSQL, file uploads, analytics, and production deployment</span>
         </div>
+      </div>
+    </section>
+
+    <section class="home-section proof-strip">
+      <div class="proof-card">
+        <span class="proof-label">Production-minded</span>
+        <strong>Built around real workflows</strong>
+        <p>Projects focus on authentication, databases, admin controls, deployment, and usability.</p>
+      </div>
+
+      <div class="proof-card">
+        <span class="proof-label">Full-stack range</span>
+        <strong>Frontend + backend + data</strong>
+        <p>Experience spans React, Supabase, PostgreSQL, PHP, Python, SQL, automation, and APIs.</p>
+      </div>
+
+      <div class="proof-card">
+        <span class="proof-label">Job-ready proof</span>
+        <strong>Live demos and shipped work</strong>
+        <p>Portfolio includes deployed applications, client work, internal tooling, and GitHub projects.</p>
       </div>
     </section>
 
     <section class="home-section">
       <div class="section-heading">
         <p class="section-kicker">Featured Work</p>
-        <h2>Projects with real users, real workflows, and real deployment.</h2>
+        <h2>Selected projects showing the problem, the system, and the result.</h2>
       </div>
 
       <section class="grid">
         <div class="card">
+          <div class="card-topline">AI Debugging Dashboard</div>
           <h2>LogLens AI</h2>
           <p>
-            AI-powered bug triage dashboard that turns logs, stack traces, and bug reports
-            into structured engineering reports with saved issue history.
+            Built an AI-powered debugging dashboard that turns messy logs, stack traces,
+            and bug reports into structured engineering reports with saved issue history,
+            helping developers move from raw errors to actionable next steps faster.
           </p>
           <a class="link" href="projects.html#loglens">See project →</a>
         </div>
 
         <div class="card">
+          <div class="card-topline">API + Planning Tool</div>
           <h2>Trip Weather Planner</h2>
           <p>
-            Full-stack weather planning app with forecast insights, packing suggestions,
-            event recommendations, and deployed API integration.
+            Built a weather planning app that combines forecast data with practical travel
+            guidance, packing suggestions, and activity recommendations through a deployed
+            frontend and API-backed workflow.
           </p>
           <a class="link" href="projects.html#trip-weather">See project →</a>
         </div>
 
-        <div class="card">
+        <div class="card featured-card">
+          <div class="card-topline">Full-Stack Productivity Dashboard</div>
           <h2>Team Task Manager</h2>
           <p>
-            Full-stack task management app with authentication, PostgreSQL persistence, row-level security, and public deployment.
+            Built a full-stack productivity dashboard for organizing tasks, files,
+            statuses, due dates, and reminders in one place. Includes Supabase Auth,
+            PostgreSQL, file attachments, drag-and-drop Kanban, analytics, activity
+            logging, and a cleaner tab-based interface.
           </p>
           <a class="link" href="projects.html#task-manager">See project →</a>
         </div>
 
         <div class="card">
+          <div class="card-topline">Production Platform Work</div>
           <h2>Docu Island</h2>
           <p>
-            Contributed across frontend, backend, and bug fixes for a live document and records management platform.
+            Contributed frontend, backend, and bug-fix work for a live document and
+            records management platform, supporting production improvements across
+            user-facing flows and system behavior.
           </p>
           <a class="link" href="projects.html#docuisland">See project →</a>
         </div>
 
         <div class="card">
+          <div class="card-topline">Internal Admin Systems</div>
           <h2>University Admin Tooling</h2>
           <p>
-            Built internal systems for group management, validation workflows, and operational controls used by staff.
+            Built internal PHP tooling for student group management, validation workflows,
+            and staff-facing admin controls, improving how operational data was searched,
+            organized, and maintained.
           </p>
           <a class="link" href="projects.html#checklist">See project →</a>
         </div>
 
         <div class="card">
+          <div class="card-topline">Client Website</div>
           <h2>Libra Ink Tattoos</h2>
           <p>
-            Designed and launched a live client website with booking flow and portfolio/gallery features.
+            Designed and launched a live client website with a booking-focused structure,
+            portfolio/gallery content, and a cleaner web presence for a small business.
           </p>
           <a class="link" href="projects.html#libraink">See project →</a>
         </div>
       </section>
+    </section>
+
+    <section class="home-section contact-strip">
+      <div>
+        <p class="section-kicker">Open to Software Engineering Roles</p>
+        <h2>Looking for someone who can build, debug, and ship practical software?</h2>
+        <p>
+          I’m looking for opportunities where I can contribute to full-stack products,
+          backend systems, internal tools, automation, and data-driven applications.
+        </p>
+      </div>
+
+      <a class="button" href="mailto:dantedean.3@gmail.com">Contact Me</a>
     </section>
   </main>
 
