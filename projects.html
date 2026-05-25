@@ -4,71 +4,103 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Projects | D'Ante Dean</title>
-  <meta name="description" content="Projects by D'Ante Dean." />
+  <meta name="description" content="Software engineering projects by D'Ante Dean, including full-stack dashboards, AI tools, production web platforms, internal admin systems, automation, and client deployments." />
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
-<body>
-  <header class="container header">
-    <div class="brand">
-      <a class="logo" href="index.html">D'Ante Dean</a>
-      <div class="subtitle">Projects</div>
-    </div>
 
-    <nav class="nav">
-      <a href="projects.html" class="active">Projects</a>
-      <a href="https://github.com/dantedean3" target="_blank" rel="noopener">GitHub</a>
-      <a href="mailto:dantedean.3@gmail.com">Email</a>
-    </nav>
+<body>
+  <header class="site-header">
+    <div class="container header">
+      <div class="brand">
+        <a class="logo" href="index.html">D'Ante Dean</a>
+        <div class="subtitle">Projects • Case Studies • Shipped Work</div>
+      </div>
+
+      <nav class="nav">
+        <a href="projects.html" class="active">Projects</a>
+        <a href="https://github.com/dantedean3" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:dantedean.3@gmail.com">Email</a>
+      </nav>
+    </div>
   </header>
 
   <main class="container">
-    <section class="section section-intro">
+    <section class="section section-intro project-hero">
       <p class="section-kicker">Project Archive</p>
-      <h1>Production work, full-stack applications, and shipped systems.</h1>
+      <h1>Projects built around problems, workflows, and real users.</h1>
       <p class="meta">
-        A selection of internal tooling, live product work, full-stack apps, automation systems, and client deployments.
+        A selection of full-stack applications, internal admin tools, production platform work,
+        automation systems, and client deployments. Each project focuses on the problem being solved,
+        the system I built, and the outcome it supports.
       </p>
+    </section>
+
+    <section class="project-index">
+      <a href="#loglens">LogLens AI</a>
+      <a href="#trip-weather">Trip Weather Planner</a>
+      <a href="#task-manager">Team Task Manager</a>
+      <a href="#docuisland">Docu Island</a>
+      <a href="#checklist">University Admin Tooling</a>
+      <a href="#automation">Automation</a>
+      <a href="#scm">Rust SCM</a>
+      <a href="#libraink">Libra Ink Tattoos</a>
     </section>
 
     <hr />
 
     <!-- LOGLENS AI -->
-    <section class="section" id="loglens">
-      <h2>LogLens AI (Full Stack)</h2>
-      <p class="meta">React • Vite • Tailwind CSS • Flask • Supabase • PostgreSQL • Gemini API • Vercel • Render</p>
+    <section class="section project-case" id="loglens">
+      <div class="case-heading">
+        <div>
+          <p class="section-kicker">AI Developer Tool</p>
+          <h2>LogLens AI</h2>
+          <p class="meta">React • Vite • Tailwind CSS • Flask • Supabase • PostgreSQL • Gemini API • Vercel • Render</p>
+        </div>
 
-      <h3>Overview</h3>
-      <p>
-        LogLens AI is a full-stack bug triage dashboard that helps developers turn raw logs,
-        stack traces, and bug reports into organized engineering reports. The app analyzes
-        technical issue details, classifies severity, suggests likely root causes, and stores
-        saved reports for follow-up.
-      </p>
+        <div class="case-actions">
+          <a class="button" href="https://loglens-ai.vercel.app/" target="_blank" rel="noopener">
+            Live Demo
+          </a>
+          <a class="button ghost" href="https://github.com/dantedean3/loglens-ai" target="_blank" rel="noopener">
+            View Code
+          </a>
+        </div>
+      </div>
+
+      <div class="case-grid">
+        <div class="case-card">
+          <h3>Problem</h3>
+          <p>
+            Debugging often starts with messy logs, stack traces, unclear bug reports, and scattered notes.
+            That makes it harder to quickly understand severity, likely causes, and next steps.
+          </p>
+        </div>
+
+        <div class="case-card">
+          <h3>Solution</h3>
+          <p>
+            I built a full-stack bug triage dashboard that turns raw technical issue details into structured
+            engineering reports with summaries, severity, root cause analysis, debugging steps, and tests to add.
+          </p>
+        </div>
+
+        <div class="case-card">
+          <h3>Result</h3>
+          <p>
+            The project demonstrates a realistic internal developer-tool workflow with authentication, AI analysis,
+            saved issue history, database persistence, and deployed frontend/backend services.
+          </p>
+        </div>
+      </div>
 
       <h3>What I Built</h3>
       <ul>
-        <li>Built a polished React dashboard with issue metrics, saved reports, filters, and severity visualization</li>
-        <li>Created a Flask backend that securely calls the Gemini API and returns structured triage results</li>
-        <li>Implemented Supabase authentication, PostgreSQL storage, and row-level security for user-scoped issue data</li>
-        <li>Added issue history, status updates, saved detail pages, and Markdown export for sharing reports</li>
-        <li>Deployed the frontend on Vercel and the backend API on Render with environment-based configuration</li>
+        <li>Built a polished React dashboard with issue metrics, saved reports, filters, and severity visualization.</li>
+        <li>Created a Flask backend that securely calls the Gemini API and returns structured triage results.</li>
+        <li>Implemented Supabase authentication, PostgreSQL storage, and row-level security for user-scoped issue data.</li>
+        <li>Added issue history, status updates, saved detail pages, and Markdown export for sharing reports.</li>
+        <li>Deployed the frontend on Vercel and the backend API on Render with environment-based configuration.</li>
       </ul>
-
-      <h3>Impact</h3>
-      <ul>
-        <li>Turns messy production errors into readable reports with summary, severity, root cause, suggested fix, debugging steps, and tests to add</li>
-        <li>Shows a realistic internal developer-tool workflow using authentication, AI, database persistence, and deployment</li>
-        <li>Demonstrates practical full-stack work across frontend, backend, API integration, and database security</li>
-      </ul>
-
-      <p>
-        <a class="button" href="https://loglens-ai.vercel.app/" target="_blank" rel="noopener">
-          Live Demo
-        </a>
-        <a class="button ghost" href="https://github.com/dantedean3/loglens-ai" target="_blank" rel="noopener">
-          View Code
-        </a>
-      </p>
 
       <h3>Screenshots</h3>
 
@@ -100,33 +132,58 @@
     <hr />
 
     <!-- TRIP WEATHER PLANNER -->
-    <section class="section" id="trip-weather">
-      <h2>Trip Weather Planner (Full Stack)</h2>
-      <p class="meta">React • Flask • OpenWeather API • Vercel • Render • UX Design</p>
+    <section class="section project-case" id="trip-weather">
+      <div class="case-heading">
+        <div>
+          <p class="section-kicker">API + Planning Tool</p>
+          <h2>Trip Weather Planner</h2>
+          <p class="meta">React • Flask • OpenWeather API • Vercel • Render • UX Design</p>
+        </div>
 
-      <h3>Overview</h3>
-      <p>
-        A full-stack weather planning application built to help users prepare for short trips with
-        forecast data, packing suggestions, weather-aware recommendations, and trip summaries.
-      </p>
+        <div class="case-actions">
+          <a class="button" href="https://trip-weather-planner.vercel.app/" target="_blank" rel="noopener">
+            Live Demo
+          </a>
+          <a class="button ghost" href="https://github.com/dantedean3/Trip-Weather-Planner" target="_blank" rel="noopener">
+            View Code
+          </a>
+        </div>
+      </div>
+
+      <div class="case-grid">
+        <div class="case-card">
+          <h3>Problem</h3>
+          <p>
+            Checking weather before a trip usually means jumping between forecast pages and manually deciding
+            what to pack or which days are better for outdoor plans.
+          </p>
+        </div>
+
+        <div class="case-card">
+          <h3>Solution</h3>
+          <p>
+            I built a weather planning app that combines forecast data with packing suggestions,
+            trip summaries, hourly breakdowns, and activity recommendations.
+          </p>
+        </div>
+
+        <div class="case-card">
+          <h3>Result</h3>
+          <p>
+            The app turns raw weather API data into a more useful travel planning workflow through
+            a deployed React frontend and Flask backend.
+          </p>
+        </div>
+      </div>
 
       <h3>What I Built</h3>
       <ul>
-        <li>Integrated the OpenWeather API to deliver live 5-day forecast data with daily and hourly breakdowns</li>
-        <li>Built expandable forecast cards, recent search persistence, and a trip summary system with best indoor/outdoor day suggestions</li>
-        <li>Designed packing suggestions and city-aware activity recommendations driven by weather conditions</li>
-        <li>Created a temperature trend visualization to help users quickly understand trip weather patterns</li>
-        <li>Implemented a full-stack deployment workflow with a React frontend on Vercel and a Flask backend on Render</li>
+        <li>Integrated the OpenWeather API to deliver live 5-day forecast data with daily and hourly breakdowns.</li>
+        <li>Built expandable forecast cards, recent search persistence, and a trip summary system with best indoor/outdoor day suggestions.</li>
+        <li>Designed packing suggestions and city-aware activity recommendations driven by weather conditions.</li>
+        <li>Created a temperature trend visualization to help users quickly understand trip weather patterns.</li>
+        <li>Implemented a full-stack deployment workflow with a React frontend on Vercel and a Flask backend on Render.</li>
       </ul>
-
-      <p>
-        <a class="button" href="https://trip-weather-planner.vercel.app/" target="_blank" rel="noopener">
-          Live Demo
-        </a>
-        <a class="button ghost" href="https://github.com/dantedean3/Trip-Weather-Planner" target="_blank" rel="noopener">
-          View Code
-        </a>
-      </p>
 
       <h3>Screenshots</h3>
 
@@ -165,76 +222,113 @@
     <hr />
 
     <!-- TEAM TASK MANAGER -->
-    <section class="section" id="task-manager">
-      <h2>Team Task Manager (Full Stack)</h2>
-      <p class="meta">React • Supabase • PostgreSQL • Authentication • Row-Level Security • Deployment</p>
+    <section class="section project-case featured-case" id="task-manager">
+      <div class="case-heading">
+        <div>
+          <p class="section-kicker">Full-Stack Productivity Dashboard</p>
+          <h2>Team Task Manager</h2>
+          <p class="meta">
+            React • Vite • Supabase Auth • PostgreSQL • Supabase Storage • Edge Functions • Recharts • Tailwind CSS • Vercel
+          </p>
+        </div>
 
-      <h3>Overview</h3>
-      <p>
-        A production-style full-stack task management application built to support secure user authentication,
-        task lifecycle management, filtering, sorting, and persistence through a hosted PostgreSQL database.
-      </p>
+        <div class="case-actions">
+          <a class="button" href="https://team-task-manager-nine-alpha.vercel.app/" target="_blank" rel="noopener">
+            Live Demo
+          </a>
+          <a class="button ghost" href="https://github.com/dantedean3/team-task-manager" target="_blank" rel="noopener">
+            View Code
+          </a>
+        </div>
+      </div>
+
+      <figure class="hero-shot">
+        <img src="assets/projects/TM-Dash_Kanban.png" alt="Team Task Manager Kanban board showing To Do, In Progress, and Done task columns" loading="lazy">
+        <figcaption class="meta">
+          Main Kanban workflow with task status columns, drag-and-drop movement, and file attachment indicators.
+        </figcaption>
+      </figure>
+
+      <div class="case-grid">
+        <div class="case-card">
+          <h3>Problem</h3>
+          <p>
+            Task tracking can get messy when statuses, deadlines, files, reminders, and activity history are split
+            across different tools or handled manually.
+          </p>
+        </div>
+
+        <div class="case-card">
+          <h3>Solution</h3>
+          <p>
+            I built a full-stack productivity dashboard that centralizes task management, file attachments,
+            reminders, analytics, activity logging, and Kanban workflows in one authenticated application.
+          </p>
+        </div>
+
+        <div class="case-card">
+          <h3>Result</h3>
+          <p>
+            The app now feels closer to a real SaaS product, with secure user-specific data, cleaner navigation,
+            file handling, dashboard insights, and deployed production infrastructure.
+          </p>
+        </div>
+      </div>
 
       <h3>What I Built</h3>
       <ul>
-        <li>Implemented secure user authentication and session handling with Supabase Auth</li>
-        <li>Designed database-backed task workflows for create, edit, delete, complete, reopen, and status tracking</li>
-        <li>Built advanced task filtering by status, priority, overdue state, and search terms</li>
-        <li>Configured row-level security policies so users can only access their own records</li>
-        <li>Deployed the application publicly and tested core CRUD and auth flows end to end</li>
+        <li>Implemented secure sign up, login, session handling, and user-specific task access with Supabase Auth and PostgreSQL.</li>
+        <li>Built task CRUD with due dates, due times, priorities, statuses, search, filtering, sorting, and completion controls.</li>
+        <li>Added drag-and-drop Kanban board workflows for moving tasks between To Do, In Progress, and Done.</li>
+        <li>Integrated Supabase Storage for file attachments, signed file access, upload support during task creation, and attachment deletion.</li>
+        <li>Created analytics charts, in-app reminders, overdue/due-soon tracking, and activity feed audit logs.</li>
+        <li>Built scheduled email reminder infrastructure using Supabase Edge Functions and Resend, with reminder tracking and duplicate-send protection.</li>
+        <li>Refactored the interface into a cleaner tab-based layout with Tasks, Create, Insights, and Activity sections.</li>
+        <li>Improved dark/light mode contrast and responsive layout behavior for a more polished product experience.</li>
       </ul>
 
+      <h3>Why It Matters</h3>
       <p>
-        <a class="button" href="https://team-task-manager-nine-alpha.vercel.app/" target="_blank" rel="noopener">
-          Live Demo
-        </a>
-        <a class="button ghost" href="https://github.com/dantedean3/team-task-manager" target="_blank" rel="noopener">
-          View Code
-        </a>
+        This project shows more than basic CRUD. It combines authentication, database-backed workflows,
+        storage, dashboard analytics, UI state management, protected user data, serverless backend logic,
+        deployment, and real product polish.
       </p>
 
       <h3>Screenshots</h3>
 
       <div class="media-grid">
         <figure class="shot">
-          <img src="assets/projects/TM-Login.png" alt="Team Task Manager login screen" loading="lazy">
-          <figcaption class="meta">Authentication screen for sign up and login.</figcaption>
+          <img src="assets/projects/TM-Dash_Task.png" alt="Team Task Manager task dashboard with stats, filters, and task list" loading="lazy">
+          <figcaption class="meta">Tasks dashboard with summary stats, filters, search, sorting, and task cards.</figcaption>
         </figure>
 
         <figure class="shot">
-          <img src="assets/projects/TM-All2.png" alt="Team Task Manager dashboard view" loading="lazy">
-          <figcaption class="meta">Main dashboard with summary stats, filters, and task actions.</figcaption>
-        </figure>
-      </div>
-
-      <div class="media-grid">
-        <figure class="shot">
-          <img src="assets/projects/TM-AllTasks.png" alt="All tasks view in Team Task Manager" loading="lazy">
-          <figcaption class="meta">All tasks view with workflow controls and active task states.</figcaption>
-        </figure>
-
-        <figure class="shot">
-          <img src="assets/projects/TM-Searchbar.png" alt="Search tasks feature in Team Task Manager" loading="lazy">
-          <figcaption class="meta">Search filtering for quickly narrowing task results.</figcaption>
+          <img src="assets/projects/TM-Dash_Kanban.png" alt="Team Task Manager Kanban board with task status columns" loading="lazy">
+          <figcaption class="meta">Kanban board with To Do, In Progress, and Done columns.</figcaption>
         </figure>
       </div>
 
       <div class="media-grid">
         <figure class="shot">
-          <img src="assets/projects/TM-HighPri.png" alt="High priority task filter view" loading="lazy">
-          <figcaption class="meta">Priority-based filtering for surfacing urgent work.</figcaption>
+          <img src="assets/projects/TM-Dash_Task2.png" alt="Team Task Manager task cards with attachments and due date details" loading="lazy">
+          <figcaption class="meta">Task list view showing file attachments, due dates, priorities, and workflow actions.</figcaption>
         </figure>
 
         <figure class="shot">
-          <img src="assets/projects/TM-InProg.png" alt="In progress task filter view" loading="lazy">
-          <figcaption class="meta">In-progress state view for workflow tracking.</figcaption>
+          <img src="assets/projects/TM-Dash_Create.png" alt="Team Task Manager create task form with file attachment upload" loading="lazy">
+          <figcaption class="meta">Create task form with due date/time, priority, status, and optional file upload.</figcaption>
         </figure>
       </div>
 
       <div class="media-grid">
         <figure class="shot">
-          <img src="assets/projects/TM-Completed.png" alt="Completed task state view" loading="lazy">
-          <figcaption class="meta">Completed task view with reopen and cleanup controls.</figcaption>
+          <img src="assets/projects/TM-Dash_Insights.png" alt="Team Task Manager analytics and reminder dashboard" loading="lazy">
+          <figcaption class="meta">Insights view with analytics charts, overdue tracking, due soon reminders, and reminder counts.</figcaption>
+        </figure>
+
+        <figure class="shot">
+          <img src="assets/projects/TM-Dash_Activity.png" alt="Team Task Manager activity feed showing task history" loading="lazy">
+          <figcaption class="meta">Activity feed showing created tasks, updates, attachments, reminders, and workflow changes.</figcaption>
         </figure>
       </div>
     </section>
@@ -242,28 +336,52 @@
     <hr />
 
     <!-- DOCU ISLAND -->
-    <section class="section" id="docuisland">
-      <h2>Docu Island (Team Project)</h2>
-      <p class="meta">Frontend • Backend • Bug fixes • Production app support</p>
+    <section class="section project-case" id="docuisland">
+      <div class="case-heading">
+        <div>
+          <p class="section-kicker">Production Platform Work</p>
+          <h2>Docu Island</h2>
+          <p class="meta">Frontend • Backend • Bug fixes • Production app support</p>
+        </div>
 
-      <h3>Overview</h3>
-      <p>
-        A document and records management platform used by businesses to organize files, manage records,
-        and centralize workflows across departments.
-      </p>
+        <div class="case-actions">
+          <a class="button" href="https://docuisland.com/" target="_blank" rel="noopener">
+            View Site
+          </a>
+        </div>
+      </div>
+
+      <div class="case-grid">
+        <div class="case-card">
+          <h3>Problem</h3>
+          <p>
+            Businesses need a central place to manage records, organize files, and support document workflows
+            across departments.
+          </p>
+        </div>
+
+        <div class="case-card">
+          <h3>Work</h3>
+          <p>
+            I contributed frontend, backend, and bug-fix work across dashboard and records-related flows
+            for a live document and records management platform.
+          </p>
+        </div>
+
+        <div class="case-card">
+          <h3>Result</h3>
+          <p>
+            The work supported production improvements, platform polish, and more reliable user-facing behavior.
+          </p>
+        </div>
+      </div>
 
       <h3>What I Worked On</h3>
       <ul>
-        <li>Frontend UI work across records and dashboard views</li>
-        <li>Backend updates to support platform workflows and fixes</li>
-        <li>Bug fixing and polish across multiple modules during active use</li>
+        <li>Frontend UI work across records and dashboard views.</li>
+        <li>Backend updates to support platform workflows and fixes.</li>
+        <li>Bug fixing and polish across multiple modules during active use.</li>
       </ul>
-
-      <p>
-        <a class="button" href="https://docuisland.com/" target="_blank" rel="noopener">
-          View Site
-        </a>
-      </p>
 
       <h3>Screenshots</h3>
       <p class="meta">
@@ -317,25 +435,50 @@
     <hr />
 
     <!-- CHECKLIST PROJECT -->
-    <section class="section" id="checklist">
-      <h2>Checklist Admin + Group Management (Production)</h2>
-      <p class="meta">PHP • MySQL • CSV ingestion • Admin tooling</p>
+    <section class="section project-case" id="checklist">
+      <div class="case-heading">
+        <div>
+          <p class="section-kicker">Internal Admin Systems</p>
+          <h2>Checklist Admin + Group Management</h2>
+          <p class="meta">PHP • MySQL • CSV ingestion • Admin tooling • Production support</p>
+        </div>
+      </div>
 
-      <h3>Overview</h3>
-      <p>
-        Internal admin tooling used to compute and render student group membership
-        from criteria-based definitions.
-      </p>
+      <div class="case-grid">
+        <div class="case-card">
+          <h3>Problem</h3>
+          <p>
+            Staff needed a clearer way to manage student group membership, criteria-based definitions,
+            and operational checklist controls without manually digging through data.
+          </p>
+        </div>
 
-      <h3>Impact</h3>
+        <div class="case-card">
+          <h3>Solution</h3>
+          <p>
+            I built and updated internal PHP admin tooling for group lookup, group membership rendering,
+            validation workflows, and new-term operational controls.
+          </p>
+        </div>
+
+        <div class="case-card">
+          <h3>Impact</h3>
+          <p>
+            The tools improved how staff searched, viewed, validated, and maintained operational student data.
+          </p>
+        </div>
+      </div>
+
+      <h3>What I Built</h3>
       <ul>
-        <li>Built dynamic group membership rendering used by administrators</li>
-        <li>Improved validation logic to prevent invalid criteria submissions</li>
-        <li>Refactored legacy PHP paths for cleaner execution and maintainability</li>
-        <li>Implemented reset and visibility controls for term transitions</li>
+        <li>Built dynamic group membership rendering used by administrators.</li>
+        <li>Improved validation logic to prevent invalid criteria submissions.</li>
+        <li>Refactored legacy PHP paths for cleaner execution and maintainability.</li>
+        <li>Implemented reset and visibility controls for term transitions.</li>
       </ul>
 
-      <h3>Screenshots (sanitized)</h3>
+      <h3>Screenshots</h3>
+      <p class="meta">Screenshots are sanitized where needed. Code lives in a private work repository.</p>
 
       <div class="media-grid">
         <figure class="shot">
@@ -384,70 +527,152 @@
           <figcaption class="meta">Page logic for lookup and rendering group results.</figcaption>
         </figure>
       </div>
-
-      <p class="meta">
-        Code lives in a private work repository.
-      </p>
     </section>
 
     <hr />
 
     <!-- AUTOMATION -->
-    <section class="section" id="automation">
-      <h2>Automation + Cron Reporting</h2>
-      <p class="meta">PHP CLI • Cron • Linux</p>
+    <section class="section project-case" id="automation">
+      <div class="case-heading">
+        <div>
+          <p class="section-kicker">Operational Automation</p>
+          <h2>Automation + Cron Reporting</h2>
+          <p class="meta">PHP CLI • Cron • Linux • Reporting automation</p>
+        </div>
+      </div>
 
-      <h3>Overview</h3>
-      <p>
-        Scheduled reporting scripts that clear and repopulate data from CSV and database sources.
-      </p>
+      <div class="case-grid">
+        <div class="case-card">
+          <h3>Problem</h3>
+          <p>
+            Reporting jobs needed to stay current without manual refreshes or fragile one-off execution.
+          </p>
+        </div>
 
-      <h3>Impact</h3>
+        <div class="case-card">
+          <h3>Solution</h3>
+          <p>
+            I worked on scheduled reporting scripts that clear, repopulate, and refresh data from CSV
+            and database sources.
+          </p>
+        </div>
+
+        <div class="case-card">
+          <h3>Impact</h3>
+          <p>
+            The automation improved reporting freshness, production safety, and long-term maintainability.
+          </p>
+        </div>
+      </div>
+
+      <h3>What I Built</h3>
       <ul>
-        <li>Migrated reporting jobs from daily to hourly execution</li>
-        <li>Added environment guards for production-safe automation</li>
-        <li>Improved readability and long-term maintainability</li>
+        <li>Migrated reporting jobs from daily to hourly execution.</li>
+        <li>Added environment guards for production-safe automation.</li>
+        <li>Improved readability and long-term maintainability.</li>
       </ul>
     </section>
 
     <hr />
 
     <!-- SCM -->
-    <section class="section" id="scm">
-      <h2>Simple SCM (Rust)</h2>
-      <p class="meta">Rust • Filesystems • CLI</p>
+    <section class="section project-case" id="scm">
+      <div class="case-heading">
+        <div>
+          <p class="section-kicker">Systems Programming</p>
+          <h2>Simple SCM</h2>
+          <p class="meta">Rust • Filesystems • CLI • Version-control concepts</p>
+        </div>
+      </div>
 
-      <h3>Overview</h3>
-      <p>
-        A simplified source control manager built to understand commit storage and file reversion mechanics.
-      </p>
+      <div class="case-grid">
+        <div class="case-card">
+          <h3>Problem</h3>
+          <p>
+            Source control systems can feel abstract until you build the mechanics yourself.
+          </p>
+        </div>
+
+        <div class="case-card">
+          <h3>Solution</h3>
+          <p>
+            I built a simplified source control manager to understand repository initialization,
+            snapshot storage, commit tracking, and file reversion.
+          </p>
+        </div>
+
+        <div class="case-card">
+          <h3>Result</h3>
+          <p>
+            The project strengthened my understanding of CLI design, file systems, and how version-control
+            tools manage state.
+          </p>
+        </div>
+      </div>
 
       <h3>What I Built</h3>
       <ul>
-        <li>Repository initialization and commit tracking</li>
-        <li>File snapshot storage</li>
-        <li>Revert functionality with CLI interface</li>
+        <li>Repository initialization and commit tracking.</li>
+        <li>File snapshot storage.</li>
+        <li>Revert functionality with CLI interface.</li>
       </ul>
     </section>
 
     <hr />
 
     <!-- CLIENT WEBSITE -->
-    <section class="section" id="libraink">
-      <h2>Libra Ink Tattoos (Client Website)</h2>
-      <p class="meta">Production deployment • Booking workflow • Gallery system</p>
+    <section class="section project-case" id="libraink">
+      <div class="case-heading">
+        <div>
+          <p class="section-kicker">Client Website</p>
+          <h2>Libra Ink Tattoos</h2>
+          <p class="meta">Production deployment • Booking workflow • Gallery system • Client communication</p>
+        </div>
 
-      <p class="meta">
-        Live tattoo studio site with booking and a gallery to showcase artist work.
-      </p>
+        <div class="case-actions">
+          <a class="button" href="https://librainktattoos.com/" target="_blank" rel="noopener">
+            View Live Site
+          </a>
+        </div>
+      </div>
 
-      <p>
-        <a class="button" href="https://librainktattoos.com/" target="_blank" rel="noopener">
-          View Live Site
-        </a>
-      </p>
+      <div class="case-grid">
+        <div class="case-card">
+          <h3>Problem</h3>
+          <p>
+            The client needed a cleaner web presence that could show artist work and make booking easier for visitors.
+          </p>
+        </div>
+
+        <div class="case-card">
+          <h3>Solution</h3>
+          <p>
+            I designed and launched a live website with a booking-focused structure, portfolio/gallery content,
+            and a simple path for clients to view work and take action.
+          </p>
+        </div>
+
+        <div class="case-card">
+          <h3>Result</h3>
+          <p>
+            The project delivered a production website for a real business and gave the client a stronger online presence.
+          </p>
+        </div>
+      </div>
     </section>
 
+    <section class="home-section contact-strip">
+      <div>
+        <p class="section-kicker">Want to talk?</p>
+        <h2>Looking for someone who can build, debug, and ship practical software?</h2>
+        <p>
+          I’m open to software engineering, full-stack development, backend, internal tools,
+          automation, and data-driven application roles.
+        </p>
+      </div>
+
+      <a class="button" href="mailto:dantedean.3@gmail.com">Contact Me</a>
+    </section>
   </main>
 
   <footer class="container footer">
